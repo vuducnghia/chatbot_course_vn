@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/nghia/PycharmProjects/chatbotVN/models/model.tflearn"
+all_model_checkpoint_paths: "/home/nghia/PycharmProjects/chatbotVN/models/model.tflearn"

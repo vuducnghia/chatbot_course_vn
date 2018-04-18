@@ -1,0 +1,52 @@
+{"intents": [
+        {"tag": "Chào",
+         "patterns": ["Chào bạn", "Xin Chào", "Chào anh", "Chào chị", "Ê"],
+         "responses": ["Chào","Xin Chào"]
+        },
+        {"tag": "Tạm biệt",
+         "patterns": ["Hẹn gặp lại", "Tạm biệt", "Tớ về nhé" ],
+         "responses": ["Tạm biệt", "Về đi"]
+        },
+        {"tag": "Tên",
+         "patterns": ["Ai đang chat đấy", "tên bạn đang nói chuyện là gì"],
+         "responses": ["Tên tôi là Bot Cource", "Bot Cource"]
+        },
+         {"tag": "Hỏi về hệ thống",
+         "patterns": ["Ðây là hệ thống tư vấn về các khóa học", "Hệ thống có những khóa học cho người dùng", "Hệ thống giúp mua những khoá học"],
+         "responses": ["Ðúng vậy"]
+        },
+        {"tag": "Các khóa học",
+         "patterns": ["Có những khóa học nào", "Các khóa học đang mở", "Tôi có thể đăng kí hay mua những khóa học nào"],
+         "responses": ["Dưới đây là danh sách nhưng khóa học:", "Ðây là các khóa học đang mở", "Dưới đây là danh sách các khóa học bạn yêu cầu", "Các khóa học bạn có thể tham khảo"],
+          "context": ["Tiếng anh, Toán, Vật lý, hóa học, sinh học, CNTT, Tin học"]
+        },
+       {"tag": "Mua khóa học",
+        "patterns": ["Tôi muốn mua khóa học thì cần phải làm gì", "Làm thế nào để mua khóa học"],
+        "responses": ["Bạn xem chi tiết các hướng dẫn bên dưới"]
+      },
+      {"tag": "Tiếng anh tên người dạy",
+       "patterns": ["Ai là người dạy tiếng anh?", "Tên thầy giáo dạy tiếng anh", "Giảng viên dạy môn tiếng anh này là ai?"],
+       "responses": ["Vũ Đức Nghĩa", "Nghĩa Vũ Đức"]
+      },
+      {"tag": "Tiếng anh thời gian",
+       "patterns": ["Bao giờ tiếng anh được mở?", "Thời gian tiếng anh mở là bao giờ", "Lịch học tiếng anh"],
+       "responses": ["8h 20/3 - 20/5/2018"]
+      },
+      {"tag": "Tiếng anh học phí",
+       "patterns": ["Giá khóa học tiếng anh", "Học phí khóa học tiếng anh", "Nộp bao nhiêu tiền khóa học tiếng anh"],
+       "responses": ["20.000.000 VNĐ"]
+      },
+      {"tag": "Toán tên người dạy",
+       "patterns": ["Ai là người dạy toán?", "Tên thầy giáo khóa học toán", "Giảng viên dạy môn toán này là ai?"],
+       "responses": ["Nguyễn Khánh Huy"]
+      },
+      {"tag": "Toán thời gian",
+       "patterns": ["Bao giờ toán mở?", "Thời gian toán mở", "Lịch học toán"],
+       "responses": ["8h 10/3 - 20/5/2018"]
+      },
+      {"tag": "Toán học phí",
+       "patterns": ["Giá toán", "Học phí toán", "Nộp bao nhiêu tiền toán"],
+       "responses": ["10.000.000 VNĐ"]
+      }
+   ]
+}
