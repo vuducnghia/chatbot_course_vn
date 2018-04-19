@@ -29,6 +29,7 @@ def clean_up_sentence(sentence):
     sentence_words = ViPosTagger.postagging(sentence.lower())[0]
     return sentence_words
 
+
 # return bag of words array: 0 or 1 for each word in the bag that exists in the sentence
 def bow(sentence, words, show_details=False):
     # tokenize the sentence
@@ -45,7 +46,8 @@ def bow(sentence, words, show_details=False):
 
 
 # data structure to hold user context
-ERROR_THRESHOLD = 0.1
+ERROR_THRESHOLD = 0.3
+
 
 def classify(sentence):
     results = model.predict([bow(sentence, words)])[0]
@@ -57,15 +59,48 @@ def classify(sentence):
     return return_list
 
 
-
-def response(sentence,show_details=False):
+def response(sentence, show_details=False):
+    print(sentence)
     results = classify(sentence)
+    print(results)
+    if not results:
+        print("Tôi không hiểu ý của bạn")
     while results:
         for i in intents['intents']:
-            if i['tag']==results[0][0]:
+            if i['tag'] == results[0][0]:
                 return print(random.choice(i['responses']))
+        results.pop(0)
 
-print(classify('Bao giờ học'))
-response('Bao giờ học')
-# def program :
-    
+
+name = ""
+age = ""
+address = ""
+arrCourse = [" tiếng anh", " toán", " vật lý", " hóa học", " sinh học", " cntt", " tin học"]
+
+
+def program():
+    courseCurent = ""
+
+    # name = input("Xin Chào! Tôi là trợ lý ảo BOTTOB.Hãy để tôi hỗ trợ các bạn các câu hỏi liên quan đến "
+    #              "các khóa học của MYCOURSE\n Bạn tên là gì vậy ?\n")
+    # age = input('Bạn bao nhiêu tuổi ?')
+    while True:
+        question = input('> ')
+        question = "  " + question
+        print(question)
+        if question == "  " \
+                       "":
+            print("Bạn chưa điền thông tin ?")
+            continue
+        if question == "bye":
+            response(question)
+            break
+        for i in arrCourse:
+            if question.lower().find(i) > 0:
+                courseCurent = i
+        print(courseCurent)
+        question += courseCurent
+        response(question)
+
+
+program()
