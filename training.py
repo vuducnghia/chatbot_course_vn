@@ -24,7 +24,7 @@ stop_words = ['bị', 'bởi', 'cả', 'các', 'cái', 'cần', 'càng', 'chỉ'
 # tokenize pattern and response
 for intent in intents['intents']:
     for pattern in intent['patterns']:
-        w = ViPosTagger.postagging(pattern.lower())[0]
+        w = ViPosTagger.postagging(ViTokenizer.tokenize(pattern))[0]
         words.extend(w)
         documents.append((w, intent['tag']))
     if intent['tag'] not in classes:

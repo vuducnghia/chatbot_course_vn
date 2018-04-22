@@ -1,9 +1,12 @@
 import pickle
 import json
+from _threading_local import local
+
 import tflearn
 from pyvi import ViTokenizer, ViPosTagger
 import numpy as np
 import random
+import logging
 
 data = pickle.load(open("models/training_data", "rb"))
 words = data['words']
@@ -26,7 +29,8 @@ model.load('./models/model.tflearn')
 
 
 def clean_up_sentence(sentence):
-    sentence_words = ViPosTagger.postagging(sentence.lower())[0]
+    sentence_words = ViPosTagger.postagging(ViTokenizer.tokenize(sentence))[0]
+    # print(sentence_words)
     return sentence_words
 
 
@@ -46,7 +50,7 @@ def bow(sentence, words, show_details=False):
 
 
 # data structure to hold user context
-ERROR_THRESHOLD = 0.3
+ERROR_THRESHOLD = 0.2
 
 
 def classify(sentence):
@@ -60,47 +64,73 @@ def classify(sentence):
 
 
 def response(sentence, show_details=False):
-    print(sentence)
     results = classify(sentence)
-    print(results)
-    if not results:
-        print("Tôi không hiểu ý của bạn")
-    while results:
-        for i in intents['intents']:
-            if i['tag'] == results[0][0]:
-                return print(random.choice(i['responses']))
-        results.pop(0)
+    # if not results:
+    #     print("Tôi không hiểu ý của bạn")
+    # while results:
+    #     for i in intents['intents']:
+    #         if i['tag'] == results[0][0]:
+    #             res = random.choice(i['responses'])
+    #             logging.info(res)
+    #             return print(res)
+    #     results.pop(0)
+    return results
 
+
+def response_state(sentence, show_details=False):
+    results = classify(sentence)
+    return results
 
 name = ""
 age = ""
 address = ""
-arrCourse = [" tiếng anh", " toán", " vật lý", " hóa học", " sinh học", " cntt", " tin học"]
+arrCourse = [" Cửu Âm Chân Kinh", " Càn Khôn Đại Na Di", " Tiên Thiên công", " Cáp Mô Công", " Hàng long thập bát chưởng", " Độc Cô Cửu Kiếm"]
 
 
 def program():
     courseCurent = ""
-
+    logging.basicConfig(filename='example.log', level=logging.INFO)
     # name = input("Xin Chào! Tôi là trợ lý ảo BOTTOB.Hãy để tôi hỗ trợ các bạn các câu hỏi liên quan đến "
     #              "các khóa học của MYCOURSE\n Bạn tên là gì vậy ?\n")
     # age = input('Bạn bao nhiêu tuổi ?')
     while True:
         question = input('> ')
         question = "  " + question
-        print(question)
-        if question == "  " \
-                       "":
+        logging.info(question)
+        if question == "  " :
             print("Bạn chưa điền thông tin ?")
             continue
         if question == "bye":
-            response(question)
+            response('tạm biệt')
+
             break
         for i in arrCourse:
-            if question.lower().find(i) > 0:
+            if question.lower().find(i.lower()) > 0:
                 courseCurent = i
-        print(courseCurent)
-        question += courseCurent
-        response(question)
+
+
+        # lưu trạng thái nhiều trường hợp data bị lệch dẫn đến kết quả sai => so sánh point giữa có state vs k state
+        question_stage = question + courseCurent
+
+        res = response(question)
+        res_stage = response_state(question_stage)
+        if res[0][1] < res_stage[0][1]:
+            while res_stage:
+                for i in intents['intents']:
+                    if i['tag'] == res_stage[0][0]:
+                        responses = random.choice(i['responses'])
+                        logging.info(responses)
+                        print(responses)
+                res_stage.pop(0)
+        else:
+            while res:
+                for i in intents['intents']:
+                    if i['tag'] == res[0][0]:
+                        responses = random.choice(i['responses'])
+                        logging.info(responses)
+                        print(responses)
+                res.pop(0)
+        # response(question)
 
 
 program()
