@@ -83,10 +83,12 @@ def response_state(sentence, show_details=False):
     print(results)
     return results
 
+
 name = ""
 age = ""
 address = ""
-arrCourse = [" Cửu Âm Chân Kinh", " Càn Khôn Đại Na Di", " Tiên Thiên công", " Cáp Mô Công", " Hàng long thập bát chưởng", " Độc Cô Cửu Kiếm"]
+arrCourse = [" Cửu Âm Chân Kinh", " Càn Khôn Đại Na Di", " Tiên Thiên công", " Cáp Mô Công",
+             " Hàng long thập bát chưởng", " Độc Cô Cửu Kiếm"]
 
 
 def program():
@@ -98,41 +100,46 @@ def program():
     while True:
         question = input('> ')
         question = "  " + question
+        question_stage = ""
         logging.info(question)
-        if question == "  " :
+        if question == "  ":
             print("Bạn chưa điền thông tin ?")
             continue
         if question == "bye":
             response('tạm biệt')
 
             break
+
+        check = False
         for i in arrCourse:
             if question.lower().find(i.lower()) > 0:
                 courseCurent = i
-
+                question_stage = question + courseCurent
+                check = True
+        if check == False:
+            for j in range(len(question)):
+                if ord(question[j]) >= 65 & ord(question[j]) <= 90:
+                    question_stage = question
+                    break
 
         # lưu trạng thái nhiều trường hợp data bị lệch dẫn đến kết quả sai => so sánh point giữa có state vs k state
-        question_stage = question + courseCurent
 
         res = response(question)
         res_stage = response_state(question_stage)
         if res[0][1] < res_stage[0][1]:
-            # while res_stage:
             for i in intents['intents']:
                 if i['tag'] == res_stage[0][0]:
                     responses = random.choice(i['responses'])
-                    logging.info(responses)
+                    logging.critical(responses)
                     print(responses)
             res_stage.pop(0)
         else:
-            # while res:
             for i in intents['intents']:
                 if i['tag'] == res[0][0]:
                     responses = random.choice(i['responses'])
-                    logging.info(responses)
+                    logging.critical(responses)
                     print(responses)
             res.pop(0)
-        # response(question)
 
 
 program()
