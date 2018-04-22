@@ -1,39 +1,39 @@
 {
   "intents": [
     {
-      "tag": "Tạm biệt",
+      "tag": "tạm biệt",
       "patterns": [
-        "Hẹn gặp lại",
-        "Tạm biệt",
-        "Cảm ơn bạn "
+        "hẹn gặp lại",
+        "tạm biệt",
+        "cảm ơn bạn "
       ],
       "responses": [
-        "Tạm biệt"
+        "tạm biệt"
       ]
     },
     {
-      "tag": "Các khóa học môn học",
+      "tag": "các khóa học môn học",
       "patterns": [
-        "Có bao nhiêu môn học",
-        "Có những khóa học nào",
-        "Có những môn học nào",
-        "Các khóa học nào đang mở",
-        "Các môn học nào đang mở",
-        "Tôi có thể đăng kí hay mua những khóa học, môn học nào"
+        "có bao nhiêu môn học",
+        "có những khóa học nào",
+        "có những môn học nào",
+        "các khóa học nào đang mở",
+        "các môn học nào đang mở",
+        "tôi có thể đăng kí hay mua những khóa học, môn học nào"
       ],
       "responses": [
-        "Dưới đây là danh sách những khóa học: Cửu Âm Chân Kinh, Càn Khôn Đại Na Di, Tiên Thiên công, Cáp Mô Công, Hàng long thập bát chưởng, Độc Cô Cửu Kiếm",
-        "Ðây là các khóa học đang mở : Cửu Âm Chân Kinh, Càn Khôn Đại Na Di, Tiên Thiên công, Cáp Mô Công, Hàng long thập bát chưởng, Độc Cô Cửu Kiếm",
-        "Dưới đây là danh sách các khóa học bạn yêu cầu: Cửu Âm Chân Kinh, Càn Khôn Đại Na Di, Tiên Thiên công, Cáp Mô Công, Hàng long thập bát chưởng, Độc Cô Cửu Kiếm",
-        "Các khóa học bạn có thể tham khảo: Cửu Âm Chân Kinh, Càn Khôn Đại Na Di, Tiên Thiên công, Cáp Mô Công, Hàng long thập bát chưởng, Độc Cô Cửu Kiếm"
+        "Dưới đây là danh sách những khóa học: Cửu Âm Chân Kinh, Càn Khôn Đại Na Di, Tiên Thiên Công, Cáp Mô Công, Hàng Long Thập Bát Chưởng, Độc Cô Cửu Kiếm",
+        "Ðây là các khóa học đang mở : Cửu Âm Chân Kinh, Càn Khôn Đại Na Di, Tiên Thiên Công, Cáp Mô Công, Hàng Long Thập Bát Chưởng, Độc Cô Cửu Kiếm",
+        "Dưới đây là danh sách các khóa học bạn yêu cầu: Cửu Âm Chân Kinh, Càn Khôn Đại Na Di, Tiên Thiên Công, Cáp Mô Công, Hàng Long Thập Bát Chưởng, Độc Cô Cửu Kiếm",
+        "các khóa học bạn có thể tham khảo: Cửu Âm Chân Kinh, Càn Khôn Đại Na Di, Tiên Thiên Công, Cáp Mô Công, Hàng Long Thập Bát Chưởng, Độc Cô Cửu Kiếm"
       ]
     },
     {
       "tag": "Mua khóa học",
       "patterns": [
-        "Tôi muốn mua khóa học thì cần phải làm gì",
-        "Làm thế nào để mua khóa học",
-        "Đăng kí khóa học thế nào vậy bạn ?"
+        "tôi muốn mua khóa học thì cần phải làm gì",
+        "làm thế nào để mua khóa học",
+        "đăng kí khóa học thế nào vậy bạn ?"
       ],
       "responses": [
         "Bạn xem chi tiết các hướng dẫn bên https://www.google.com.vn/"
@@ -42,10 +42,10 @@
     {
       "tag": "giáo viên Cửu Âm Chân Kinh",
       "patterns": [
-        "Ai dạy Cửu Âm Chân Kinh",
-        "Ai là người dạy Cửu Âm Chân Kinh?",
-        "Tên thầy giáo dạy Cửu Âm Chân Kinh",
-        "Giảng viên dạy môn Cửu Âm Chân Kinh này là ai?"
+        "ai dạy Cửu Âm Chân Kinh",
+        "ai là người dạy Cửu Âm Chân Kinh?",
+        "tên thầy giáo dạy Cửu Âm Chân Kinh",
+        "giảng viên dạy môn Cửu Âm Chân Kinh này là ai?"
       ],
       "responses": [
         "Hoàng Thường"
@@ -55,9 +55,9 @@
       "tag": "lịch học Cửu Âm Chân Kinh ",
       "patterns": [
         "khi nào mở lớp học Cửu Âm Chân Kinh",
-        "Bao giờ khóa học Cửu Âm Chân Kinh được mở?",
-        "Thời gian Cửu Âm Chân Kinh mở là bao giờ",
-        "Lịch học môn Cửu Âm Chân Kinh thế nào",
+        "bao giờ khóa học Cửu Âm Chân Kinh được mở?",
+        "thời gian Cửu Âm Chân Kinh mở là bao giờ",
+        "lịch học môn Cửu Âm Chân Kinh thế nào",
         "thời gian môn Cửu Âm Chân Kinh thế nào"
       ],
       "responses": [
@@ -67,10 +67,10 @@
     {
       "tag": "học phí Cửu Âm Chân Kinh",
       "patterns": [
-        "Bao nhiêu tiền môn học Cửu Âm Chân Kinh",
-        "Giá khóa học Cửu Âm Chân Kinh",
-        "Học phí khóa học Cửu Âm Chân Kinh",
-        "Nộp bao nhiêu tiền khóa học Cửu Âm Chân Kinh"
+        "bao nhiêu tiền môn học Cửu Âm Chân Kinh",
+        "giá khóa học Cửu Âm Chân Kinh",
+        "học phí khóa học Cửu Âm Chân Kinh",
+        "nộp bao nhiêu tiền khóa học Cửu Âm Chân Kinh"
       ],
       "responses": [
         "20.000.000 VNĐ"
@@ -79,22 +79,22 @@
     {
       "tag": "chi tiết khóa học Cửu Âm Chân Kinh",
       "patterns": [
-        "Môn Cửu Âm Chân Kinh học những gì vậy ?",
-        "Nội dung học môn Cửu Âm Chân Kinh",
-        "Chương trình môn Cửu Âm Chân Kinh",
+        "môn Cửu Âm Chân Kinh học những gì vậy ?",
+        "nội dung học môn Cửu Âm Chân Kinh",
+        "chương trình môn Cửu Âm Chân Kinh",
         "chi tiết Cửu Âm Chân Kinh"
       ],
       "responses": [
-        "Học 2 quyển: Quyển thượng bao gồm đạo lý thâm ảo của Đạo gia từ đó đúc kết thành bí kíp rèn luyện nội công căn bản. Quyển hạ gồm các chiêu thức khắc địch và bảo vệ thân thể"
+        "học 2 quyển: Quyển thượng bao gồm đạo lý thâm ảo của Đạo gia từ đó đúc kết thành bí kíp rèn luyện nội công căn bản. Quyển hạ gồm các chiêu thức khắc địch và bảo vệ thân thể"
       ]
     },
     {
       "tag": "giáo viên Càn Khôn Đại Na Di",
       "patterns": [
-        "Ai dạy Càn Khôn Đại Na Di",
-        "Ai là người dạy Càn Khôn Đại Na Di?",
-        "Tên thầy giáo dạy Càn Khôn Đại Na Di",
-        "Giảng viên dạy môn Càn Khôn Đại Na Di này là ai?"
+        "ai dạy Càn Khôn Đại Na Di",
+        "ai là người dạy Càn Khôn Đại Na Di?",
+        "tên thầy giáo dạy Càn Khôn Đại Na Di",
+        "giảng viên dạy môn Càn Khôn Đại Na Di này là ai?"
       ],
       "responses": [
         "Trương Vô Kỵ"
@@ -104,9 +104,9 @@
       "tag": "lịch học Càn Khôn Đại Na Di ",
       "patterns": [
         "khi nào mở lớp học Càn Khôn Đại Na Di",
-        "Bao giờ khóa học Càn Khôn Đại Na Di được mở?",
-        "Thời gian Càn Khôn Đại Na Di mở là bao giờ",
-        "Lịch học môn Càn Khôn Đại Na Di thế nào",
+        "bao giờ khóa học Càn Khôn Đại Na Di được mở?",
+        "thời gian Càn Khôn Đại Na Di mở là bao giờ",
+        "lịch học môn Càn Khôn Đại Na Di thế nào",
         "thời gian môn Càn Khôn Đại Na Di thế nào"
       ],
       "responses": [
@@ -116,10 +116,10 @@
     {
       "tag": "học phí Càn Khôn Đại Na Di",
       "patterns": [
-        "Bao nhiêu tiền môn học Càn Khôn Đại Na Di",
-        "Giá khóa học Càn Khôn Đại Na Di",
-        "Học phí khóa học Càn Khôn Đại Na Di",
-        "Nộp bao nhiêu tiền khóa học Càn Khôn Đại Na Di"
+        "bao nhiêu tiền môn học Càn Khôn Đại Na Di",
+        "giá khóa học Càn Khôn Đại Na Di",
+        "học phí khóa học Càn Khôn Đại Na Di",
+        "nộp bao nhiêu tiền khóa học Càn Khôn Đại Na Di"
       ],
       "responses": [
         "10.000.000 VNĐ"
@@ -128,59 +128,59 @@
     {
       "tag": "chi tiết khóa học Càn Khôn Đại Na Di",
       "patterns": [
-        "Môn Càn Khôn Đại Na Di học những gì vậy ?",
-        "Nội dung học môn Càn Khôn Đại Na Di",
-        "Chương trình môn Càn Khôn Đại Na Di",
-        "Chi tiết Càn Khôn Đại Na Di"
+        "môn Càn Khôn Đại Na Di học những gì vậy ?",
+        "nội dung học môn Càn Khôn Đại Na Di",
+        "chương trình môn Càn Khôn Đại Na Di",
+        "chi tiết Càn Khôn Đại Na Di"
       ],
       "responses": [
         "là bộ võ công tâm pháp thất truyền của Minh giáo nơi Tây Vực, sử dụng để di chuyển nội lực trong cơ thể, chuyển hướng các chiêu thức của kẻ địch, cũng có thể dùng để di chuyển vật nặng ngàn cân. Tất cả có 7 tầng (cấp độ).Người sáng tạo ra Càn Khôn Đại Na Di chỉ luyện được đến tầng thứ 6 còn tầng thứ 7 là hoàn toàn dựa vào trí tưởng tượng của người này nên có những chỗ không thể luyện được."
       ]
     },
     {
-      "tag": "giáo viên Tiên Thiên công",
+      "tag": "giáo viên Tiên Thiên Công",
       "patterns": [
-        "Ai dạy Tiên Thiên công",
-        "Ai là người dạy Tiên Thiên công?",
-        "Tên thầy giáo dạy Tiên Thiên công",
-        "Giảng viên dạy môn Tiên Thiên công này là ai?"
+        "ai dạy Tiên Thiên Công",
+        "ai là người dạy Tiên Thiên Công?",
+        "tên thầy giáo dạy Tiên Thiên Công",
+        "giảng viên dạy môn Tiên Thiên Công này là ai?"
       ],
       "responses": [
         "Vương Trùng Dương"
       ]
     },
     {
-      "tag": "lịch học Tiên Thiên công ",
+      "tag": "lịch học Tiên Thiên Công ",
       "patterns": [
-        "khi nào mở lớp học Tiên Thiên công",
-        "Bao giờ khóa học Tiên Thiên công được mở?",
-        "Thời gian Tiên Thiên công mở là bao giờ",
-        "Lịch học môn Tiên Thiên công thế nào",
-        "thời gian môn Tiên Thiên công thế nào"
+        "khi nào mở lớp học Tiên Thiên Công",
+        "bao giờ khóa học Tiên Thiên Công được mở?",
+        "thời gian Tiên Thiên Công mở là bao giờ",
+        "lịch học môn Tiên Thiên Công thế nào",
+        "thời gian môn Tiên Thiên Công thế nào"
       ],
       "responses": [
         "8h 20/3 - 20/5/2019"
       ]
     },
     {
-      "tag": "học phí Tiên Thiên công",
+      "tag": "học phí Tiên Thiên Công",
       "patterns": [
-        "Bao nhiêu tiền môn học Tiên Thiên công",
-        "Giá khóa học Tiên Thiên công",
-        "Học phí khóa học Tiên Thiên công",
-        "Nộp bao nhiêu tiền khóa học Tiên Thiên công"
+        "bao nhiêu tiền môn học Tiên Thiên Công",
+        "giá khóa học Tiên Thiên Công",
+        "học phí khóa học Tiên Thiên Công",
+        "nộp bao nhiêu tiền khóa học Tiên Thiên Công"
       ],
       "responses": [
         "25.000.000 VNĐ"
       ]
     },
     {
-      "tag": "chi tiết khóa học Tiên Thiên công",
+      "tag": "chi tiết khóa học Tiên Thiên Công",
       "patterns": [
-        "Môn Tiên Thiên công học những gì vậy ?",
-        "Nội dung học môn Tiên Thiên công",
-        "Chương trình môn Tiên Thiên công",
-        "chi tiết Tiên Thiên công"
+        "môn Tiên Thiên Công học những gì vậy ?",
+        "nội dung học môn Tiên Thiên Công",
+        "chương trình môn Tiên Thiên Công",
+        "chi tiết Tiên Thiên Công"
       ],
       "responses": [
         "môn nội công thượng thặng của Vương Trùng Dương, có tác dụng đả thông kỳ kinh bát mạch, tu luyện đến mức tận cùng cũng không thua kém gì Cửu Âm chân kinh vì theo lời Vương Trùng Dương, có luyện thêm nữa cũng chỉ là thiên hạ đệ nhất mà thôi"
@@ -189,10 +189,10 @@
     {
       "tag": "giáo viên Cáp Mô Công",
       "patterns": [
-        "Ai dạy Cáp Mô Công",
-        "Ai là người dạy Cáp Mô Công?",
-        "Tên thầy giáo dạy Cáp Mô Công",
-        "Giảng viên dạy môn Cáp Mô Công này là ai?"
+        "ai dạy Cáp Mô Công",
+        "ai là người dạy Cáp Mô Công?",
+        "tên thầy giáo dạy Cáp Mô Công",
+        "giảng viên dạy môn Cáp Mô Công này là ai?"
       ],
       "responses": [
         "Âu Dương Phong"
@@ -202,10 +202,10 @@
       "tag": "lịch học Cáp Mô Công ",
       "patterns": [
         "khi nào mở lớp học Cáp Mô Công",
-        "Bao giờ khóa học Cáp Mô Công được mở?",
-        "Thời gian Cáp Mô Công mở là bao giờ",
+        "bao giờ khóa học Cáp Mô Công được mở?",
+        "thời gian Cáp Mô Công mở là bao giờ",
         "thời gian môn Cáp Mô Công thế nào",
-        "Lịch học môn Cáp Mô Công thế nào"
+        "lịch học môn Cáp Mô Công thế nào"
       ],
       "responses": [
         "8h 29/3 - 20/7/2019"
@@ -214,10 +214,10 @@
     {
       "tag": "học phí Cáp Mô Công",
       "patterns": [
-        "Bao nhiêu tiền môn học Cáp Mô Công",
-        "Giá khóa học Cáp Mô Công",
-        "Học phí khóa học Cáp Mô Công",
-        "Nộp bao nhiêu tiền khóa học Cáp Mô Công"
+        "bao nhiêu tiền môn học Cáp Mô Công",
+        "giá khóa học Cáp Mô Công",
+        "học phí khóa học Cáp Mô Công",
+        "nộp bao nhiêu tiền khóa học Cáp Mô Công"
       ],
       "responses": [
         "26.000.000 VNĐ"
@@ -226,71 +226,71 @@
     {
       "tag": "chi tiết khóa học Cáp Mô Công",
       "patterns": [
-        "Môn Cáp Mô Công học những gì vậy ?",
-        "Nội dung học môn Cáp Mô Công",
-        "Chương trình môn Cáp Mô Công",
+        "môn Cáp Mô Công học những gì vậy ?",
+        "nội dung học môn Cáp Mô Công",
+        "chương trình môn Cáp Mô Công",
         "chi tiết Cáp Mô Công"
       ],
       "responses": [
-        "phản ứng oxi-hóa khử"
+        "Là một môn võ công chuyên lấy tĩnh chế động. Tư thế vận kình, phát chiêu dựa trên đặc điểm cấu tạo thân thể và hoạt động của loài cóc. Phàm phải là người có nội công cực kì cao siêu mới có khả năng luyện được"
       ]
     },
     {
-      "tag": "giáo viên Hàng long thập bát chưởng",
+      "tag": "giáo viên Hàng Long Thập Bát Chưởng",
       "patterns": [
-        "Ai dạy Hàng long thập bát chưởng",
-        "Ai là người dạy Hàng long thập bát chưởng?",
-        "Tên thầy giáo dạy Hàng long thập bát chưởng",
-        "Giảng viên dạy môn Hàng long thập bát chưởng này là ai?"
+        "ai dạy Hàng Long Thập Bát Chưởng",
+        "ai là người dạy Hàng Long Thập Bát Chưởng?",
+        "tên thầy giáo dạy Hàng Long Thập Bát Chưởng",
+        "giảng viên dạy môn Hàng Long Thập Bát Chưởng này là ai?"
       ],
       "responses": [
         "Hồng Thất Công, Quách Tĩnh, Tiêu Phong"
       ]
     },
     {
-      "tag": "lịch học Hàng long thập bát chưởng ",
+      "tag": "lịch học Hàng Long Thập Bát Chưởng ",
       "patterns": [
-        "khi nào mở lớp học Hàng long thập bát chưởng",
-        "Bao giờ khóa học Hàng long thập bát chưởng được mở?",
-        "Thời gian Hàng long thập bát chưởng mở là bao giờ",
-        "Lịch học môn Hàng long thập bát chưởng thế nào",
-        "thời gian môn Hàng long thập bát chưởng thế nào"
+        "khi nào mở lớp học Hàng Long Thập Bát Chưởng",
+        "bao giờ khóa học Hàng Long Thập Bát Chưởng được mở?",
+        "thời gian Hàng Long Thập Bát Chưởng mở là bao giờ",
+        "lịch học môn Hàng Long Thập Bát Chưởng thế nào",
+        "thời gian môn Hàng Long Thập Bát Chưởng thế nào"
       ],
       "responses": [
         "20h 29/5 - 20/7/2019"
       ]
     },
     {
-      "tag": "học phí Hàng long thập bát chưởng",
+      "tag": "học phí Hàng Long Thập Bát Chưởng",
       "patterns": [
-        "Bao nhiêu tiền môn học Hàng long thập bát chưởng",
-        "Giá khóa học Hàng long thập bát chưởng",
-        "Học phí khóa học Hàng long thập bát chưởng",
-        "Nộp bao nhiêu tiền khóa học Hàng long thập bát chưởng"
+        "bao nhiêu tiền môn học Hàng Long Thập Bát Chưởng",
+        "giá khóa học Hàng Long Thập Bát Chưởng",
+        "học phí khóa học Hàng Long Thập Bát Chưởng",
+        "nộp bao nhiêu tiền khóa học Hàng Long Thập Bát Chưởng"
       ],
       "responses": [
         "26.000.000 VNĐ"
       ]
     },
     {
-      "tag": "chi tiết khóa học Hàng long thập bát chưởng",
+      "tag": "chi tiết khóa học Hàng Long Thập Bát Chưởng",
       "patterns": [
-        "Môn Hàng long thập bát chưởng học những gì vậy ?",
-        "Nội dung học môn Hàng long thập bát chưởng",
-        "Chương trình môn Hàng long thập bát chưởng",
-        "chi tiết Hàng long thập bát chưởng"
+        "môn Hàng Long Thập Bát Chưởng học những gì vậy ?",
+        "nội dung học môn Hàng Long Thập Bát Chưởng",
+        "chương trình môn Hàng Long Thập Bát Chưởng",
+        "chi tiết Hàng Long Thập Bát Chưởng"
       ],
       "responses": [
-        "Hàng long thập bát chưởng là võ công chí cương của thiên hạ, bao đời Bang chủ Cái Bang nhờ nó mà thành danh giang hồ, uy lực tùy theo người sử dụng. Chiêu thức của bộ chưởng pháp này bao gồm: Phi long tại thiên, Kiến Long Tại Điền,..."
+        "Hàng Long Thập Bát Chưởng là võ công chí cương của thiên hạ, bao đời Bang chủ Cái Bang nhờ nó mà thành danh giang hồ, uy lực tùy theo người sử dụng. chiêu thức của bộ chưởng pháp này bao gồm: Phi long tại thiên, Kiến Long Tại Điền,..."
       ]
     },
     {
       "tag": "giáo viên Độc Cô Cửu Kiếm",
       "patterns": [
-        "Ai dạy Độc Cô Cửu Kiếm",
-        "Ai là người dạy Độc Cô Cửu Kiếm?",
-        "Tên thầy giáo dạy Độc Cô Cửu Kiếm",
-        "Giảng viên dạy môn Độc Cô Cửu Kiếm này là ai?"
+        "ai dạy Độc Cô Cửu Kiếm",
+        "ai là người dạy Độc Cô Cửu Kiếm?",
+        "tên thầy giáo dạy Độc Cô Cửu Kiếm",
+        "giảng viên dạy môn Độc Cô Cửu Kiếm này là ai?"
       ],
       "responses": [
         "Độc Cô Cầu Bại"
@@ -300,9 +300,9 @@
       "tag": "lịch học Độc Cô Cửu Kiếm",
       "patterns": [
         "khi nào mở lớp học Độc Cô Cửu Kiếm",
-        "Bao giờ khóa học Độc Cô Cửu Kiếm được mở?",
-        "Thời gian Độc Cô Cửu Kiếm mở là bao giờ",
-        "Lịch học, thời gian môn Độc Cô Cửu Kiếm thế nào",
+        "bao giờ khóa học Độc Cô Cửu Kiếm được mở?",
+        "thời gian Độc Cô Cửu Kiếm mở là bao giờ",
+        "lịch học, thời gian môn Độc Cô Cửu Kiếm thế nào",
         "thời gian môn Độc Cô Cửu Kiếm thế nào"
       ],
       "responses": [
@@ -312,10 +312,10 @@
     {
       "tag": "học phí Độc Cô Cửu Kiếm",
       "patterns": [
-        "Bao nhiêu tiền môn học Độc Cô Cửu Kiếm",
-        "Giá khóa học Độc Cô Cửu Kiếm",
-        "Học phí khóa học Độc Cô Cửu Kiếm",
-        "Nộp bao nhiêu tiền khóa học Độc Cô Cửu Kiếm"
+        "bao nhiêu tiền môn học Độc Cô Cửu Kiếm",
+        "giá khóa học Độc Cô Cửu Kiếm",
+        "học phí khóa học Độc Cô Cửu Kiếm",
+        "nộp bao nhiêu tiền khóa học Độc Cô Cửu Kiếm"
       ],
       "responses": [
         "25.000.000 VNĐ"
@@ -324,13 +324,13 @@
     {
       "tag": "chi tiết khóa học Độc Cô Cửu Kiếm",
       "patterns": [
-        "Độc Cô Cửu Kiếmn công học những gì vậy ?",
-        "Nội dung học môn Độc Cô Cửu Kiếm",
-        "Chương trình môn Độc Cô Cửu Kiếm",
+        "Độc Cô Cửu Kiếm công học những gì vậy ?",
+        "nội dung học môn Độc Cô Cửu Kiếm",
+        "chương trình môn Độc Cô Cửu Kiếm",
         "chi tiết Độc Cô Cửu Kiếm"
       ],
       "responses": [
-        "Độc cô cửu kiếm là một bí kíp kiếm thuật tối thượng đề cao việc sử dụng kiếm thuật một cách linh hoạt theo phương châm dùng vô chiêu thắng hữu chiêu đòi hỏi người sử dụng kiếm phải sử dụng chiêu thức biến hóa liên tục như nước chảy mây trôi, tùy theo sự thay đổi của đối thủ mà điều chỉnh lại chiêu thức của mình, lấy sự tấn công làm phòng thủ. Độc cô cửu kiếm tối kị tính học thuộc mà đòi hỏi một chữ Ngộ và khi đó thì dù có quên thì lại càng phát huy khả năng phong phú của kiếm thuật."
+        "Độc Cô Cửu Kiếm là một bí kíp kiếm thuật tối thượng đề cao việc sử dụng kiếm thuật một cách linh hoạt theo phương châm dùng vô chiêu thắng hữu chiêu đòi hỏi người sử dụng kiếm phải sử dụng chiêu thức biến hóa liên tục như nước chảy mây trôi, tùy theo sự thay đổi của đối thủ mà điều chỉnh lại chiêu thức của mình, lấy sự tấn công làm phòng thủ. Độc Cô Cửu Kiếm tối kị tính học thuộc mà đòi hỏi một chữ Ngộ và khi đó thì dù có quên thì lại càng phát huy khả năng phong phú của kiếm thuật."
       ]
     },
     {
@@ -341,7 +341,7 @@
         "chi tiết Độc Cô Cầu Bại ?"
       ],
       "responses": [
-        "Độc Cô Cầu Bại là một cao thủ có võ công đạt mức lư hỏa thuần thanh, đặc biệt là trình độ kiếm thuật thiên hạ vô địch. Ông ta tung hoành giang hồ suốt một đời mà chưa từng bị thất bại, không tìm được đối thủ của mình. Ông ta cô độc cho đến chết mà chỉ mong được một lần bại trận bởi đối thủ nên có tên là Độc cô cầu bại."
+        "Độc Cô Cầu Bại là một cao thủ có võ công đạt mức lư hỏa thuần thanh, đặc biệt là trình độ kiếm thuật thiên hạ vô địch. Ông ta tung hoành giang hồ suốt một đời mà chưa từng bị thất bại, không tìm được đối thủ của mình. Ông ta cô độc cho đến chết mà chỉ mong được một lần bại trận bởi đối thủ nên có tên là Độc Cô Cầu Bại."
       ]
     },
     {
@@ -375,7 +375,7 @@
         "chi tiết Trương Vô Kỵ ?"
       ],
       "responses": [
-        "Trương Vô Kỵ là con trai của Võ Đang Trương Ngũ Hiệp Trương Thúy Sơn và Thiên Ưng Tử Vi đường chủ Ân Tố Tố (Ân Tố Tố là con gái của Bạch Mi Ưng Vương Ân Thiên Chính nên Trương Vô Kỵ cũng là cháu ngoại của ông ta). Lúc mới sinh ra Trương Vô Kỵ đã sống trên Băng Hỏa đảo cùng với cha mẹ và nghĩa phụ Tạ Tốn. Cái tên Vô Kỵ được Tạ Tốn đặt theo tên đứa con đã bị Hỗn Nguyên Tích Lịch Thủ Thành Côn giết chết khi vừa mới chào đời."
+        "Trương Vô Kỵ là con trai của Võ Đang Trương Ngũ Hiệp Trương Thúy Sơn và Thiên Ưng Tử Vi đường chủ Ân Tố Tố (Ân Tố Tố là con gái của Bạch Mi Ưng Vương Ân Thiên Chính nên Trương Vô Kỵ cũng là cháu ngoại của ông ta). Lúc mới sinh ra Trương Vô Kỵ đã sống trên Băng Hỏa đảo cùng với cha mẹ và nghĩa phụ Tạ Tốn. Cái tên Vô Kỵ được Tạ Tốn đặt theo tên đứa con đã bị Hỗn Nguyên Tích lịch Thủ Thành Côn giết chết khi vừa mới chào đời."
       ]
     },
     {
@@ -397,7 +397,7 @@
         "chi tiết Hồng Thất Công ?"
       ],
       "responses": [
-        "Hồng Thất Công là bang chủ thứ mười tám của Cái Bang, tính ham ăn ham rượu, từng một lần vì mải ăn uống mà để một vị huynh đệ chết thảm. Ông tức giận tự chặt một ngón tay của mình để trừng phạt, từ đó giang hồ gọi ông là Cửu chỉ thần cái. Hồng Thất Công có võ công rất cao siêu, tại Hoa Sơn luận kiếm lần thứ nhất, ông là một trong Thiên hạ ngũ tuyệt, xưng tụng là Bắc Cái. Hai môn võ nổi tiếng của Hồng Thất Công là Giáng Long thập bát chưởng và Đả cẩu bổng pháp."
+        "Hồng Thất Công là bang chủ thứ mười tám của Cái Bang, tính ham ăn ham rượu, từng một lần vì mải ăn uống mà để một vị huynh đệ chết thảm. Ông tức giận tự chặt một ngón tay của mình để trừng phạt, từ đó giang hồ gọi ông là Cửu chỉ thần cái. Hồng Thất Công có võ công rất cao siêu, tại Hoa Sơn luận kiếm lần thứ nhất, ông là một trong Thiên hạ ngũ tuyệt, xưng tụng là Bắc Cái. Hai môn võ nổi tiếng của Hồng Thất Công là giáng Long thập bát chưởng và Đả cẩu bổng pháp."
       ]
     },
     {
