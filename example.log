@@ -1,68 +1,27 @@
-INFO:root:  có những môn nào 
-INFO:root:Độc cô cửu kiếm là một bí kíp kiếm thuật tối thượng đề cao việc sử dụng kiếm thuật một cách linh hoạt theo phương châm dùng vô chiêu thắng hữu chiêu đòi hỏi người sử dụng kiếm phải sử dụng chiêu thức biến hóa liên tục như nước chảy mây trôi, tùy theo sự thay đổi của đối thủ mà điều chỉnh lại chiêu thức của mình, lấy sự tấn công làm phòng thủ. Độc cô cửu kiếm tối kị tính học thuộc mà đòi hỏi một chữ Ngộ và khi đó thì dù có quên thì lại càng phát huy khả năng phong phú của kiếm thuật.
-INFO:root:  Có bao nhiêu môn học
-INFO:root:Dưới đây là danh sách các khóa học bạn yêu cầu: Cửu Âm Chân Kinh, Càn Khôn Đại Na Di, Tiên Thiên công, Cáp Mô Công, Hàng long thập bát chưởng, Độc Cô Cửu Kiếm
-INFO:root:  Có những môn học nào
-INFO:root:Ðây là các khóa học đang mở : Cửu Âm Chân Kinh, Càn Khôn Đại Na Di, Tiên Thiên công, Cáp Mô Công, Hàng long thập bát chưởng, Độc Cô Cửu Kiếm
-INFO:root:  Cửu Âm Chân Kinh
-INFO:root:Học 2 quyển: Quyển thượng bao gồm đạo lý thâm ảo của Đạo gia từ đó đúc kết thành bí kíp rèn luyện nội công căn bản. Quyển hạ gồm các chiêu thức khắc địch và bảo vệ thân thể
-INFO:root:  lịch học 
-INFO:root:Học 2 quyển: Quyển thượng bao gồm đạo lý thâm ảo của Đạo gia từ đó đúc kết thành bí kíp rèn luyện nội công căn bản. Quyển hạ gồm các chiêu thức khắc địch và bảo vệ thân thể
-INFO:root:  thời gian 
-INFO:root:8h 20/3 - 20/5/2018
-INFO:root:Học 2 quyển: Quyển thượng bao gồm đạo lý thâm ảo của Đạo gia từ đó đúc kết thành bí kíp rèn luyện nội công căn bản. Quyển hạ gồm các chiêu thức khắc địch và bảo vệ thân thể
-INFO:root:  Cửu Âm Chân Kinh
-INFO:root:Học 2 quyển: Quyển thượng bao gồm đạo lý thâm ảo của Đạo gia từ đó đúc kết thành bí kíp rèn luyện nội công căn bản. Quyển hạ gồm các chiêu thức khắc địch và bảo vệ thân thể
-INFO:root:  lịch học 
-INFO:root:Học 2 quyển: Quyển thượng bao gồm đạo lý thâm ảo của Đạo gia từ đó đúc kết thành bí kíp rèn luyện nội công căn bản. Quyển hạ gồm các chiêu thức khắc địch và bảo vệ thân thể
-INFO:root:  thời gian 
-INFO:root:8h 20/3 - 20/5/2018
-INFO:root:Học 2 quyển: Quyển thượng bao gồm đạo lý thâm ảo của Đạo gia từ đó đúc kết thành bí kíp rèn luyện nội công căn bản. Quyển hạ gồm các chiêu thức khắc địch và bảo vệ thân thể
-INFO:root:  Cửu Âm Chân Kinh
-INFO:root:Học 2 quyển: Quyển thượng bao gồm đạo lý thâm ảo của Đạo gia từ đó đúc kết thành bí kíp rèn luyện nội công căn bản. Quyển hạ gồm các chiêu thức khắc địch và bảo vệ thân thể
-INFO:root:  lịch học 
-INFO:root:Học 2 quyển: Quyển thượng bao gồm đạo lý thâm ảo của Đạo gia từ đó đúc kết thành bí kíp rèn luyện nội công căn bản. Quyển hạ gồm các chiêu thức khắc địch và bảo vệ thân thể
-INFO:root:  thời gian 
-INFO:root:8h 20/3 - 20/5/2018
-INFO:root:Học 2 quyển: Quyển thượng bao gồm đạo lý thâm ảo của Đạo gia từ đó đúc kết thành bí kíp rèn luyện nội công căn bản. Quyển hạ gồm các chiêu thức khắc địch và bảo vệ thân thể
-INFO:root:  lịch học môn này 
-INFO:root:Học 2 quyển: Quyển thượng bao gồm đạo lý thâm ảo của Đạo gia từ đó đúc kết thành bí kíp rèn luyện nội công căn bản. Quyển hạ gồm các chiêu thức khắc địch và bảo vệ thân thể
-INFO:root:  Lịch học môn Cửu Âm Chân Kinh thế nào
-INFO:root:8h 20/3 - 20/5/2018
-INFO:root:  giá tiền 
-INFO:root:Học 2 quyển: Quyển thượng bao gồm đạo lý thâm ảo của Đạo gia từ đó đúc kết thành bí kíp rèn luyện nội công căn bản. Quyển hạ gồm các chiêu thức khắc địch và bảo vệ thân thể
-INFO:root:20.000.000 VNĐ
+
+INFO:root:  có bao nhiêu môn 
+INFO:root:Dưới đây là danh sách những khóa học: Cửu Âm Chân Kinh, Càn Khôn Đại Na Di, Tiên Thiên Công, Cáp Mô Công, Hàng Long Thập Bát Chưởng, Độc Cô Cửu Kiếm
+INFO:root:  Độc Cô Cửu Kiếm
+INFO:root:Độc Cô Cửu Kiếm là một bí kíp kiếm thuật tối thượng đề cao việc sử dụng kiếm thuật một cách linh hoạt theo phương châm dùng vô chiêu thắng hữu chiêu đòi hỏi người sử dụng kiếm phải sử dụng chiêu thức biến hóa liên tục như nước chảy mây trôi, tùy theo sự thay đổi của đối thủ mà điều chỉnh lại chiêu thức của mình, lấy sự tấn công làm phòng thủ. Độc Cô Cửu Kiếm tối kị tính học thuộc mà đòi hỏi một chữ Ngộ và khi đó thì dù có quên thì lại càng phát huy khả năng phong phú của kiếm thuật.
 INFO:root:  ai dạy 
+INFO:root:Độc Cô Cầu Bại
+INFO:root:  lịch học 
+INFO:root:8h 20/3 - 20/5/2019
+INFO:root:  giá 
+INFO:root:25.000.000 VNĐ
+INFO:root:  giảng viên 
+INFO:root:Tiêu Phong là một trong những đại anh hùng xuất chúng nhất trong tiểu thuyết Kim Dung.
+INFO:root:  giảng viên dạy môn Độc Cô Cửu Kiếm này là ai?
+INFO:root:Độc Cô Cầu Bại
+INFO:root:  giảng viên là ai 
+INFO:root:Tiêu Phong là một trong những đại anh hùng xuất chúng nhất trong tiểu thuyết Kim Dung.
+INFO:root:  giảng viên dạy môn
 INFO:root:Vương Trùng Dương
-INFO:root:  quách tính 
-INFO:root:Học 2 quyển: Quyển thượng bao gồm đạo lý thâm ảo của Đạo gia từ đó đúc kết thành bí kíp rèn luyện nội công căn bản. Quyển hạ gồm các chiêu thức khắc địch và bảo vệ thân thể
-INFO:root:  Quách Tĩnh 
-INFO:root:Quách Tĩnh là con của Quách Khiếu Thiên và Lý Bình, gọi Quách Thịnh (nhân vật trong truyện Thủy Hử, một trong 108 anh hùng Lương Sơn Bạc) là cụ tổ. Cái tên Quách Tĩnh là do đạo sĩ phái Toàn Chân, Trường Xuân Tử Khưu Xứ Cơ đặt cho với ý nghĩa mong chàng và người anh em kết nghĩa Dương Khang không quên mối nhục Tĩnh Khang của Đại Tống ngày trước.
-INFO:root:  bye 
-INFO:root:Học 2 quyển: Quyển thượng bao gồm đạo lý thâm ảo của Đạo gia từ đó đúc kết thành bí kíp rèn luyện nội công căn bản. Quyển hạ gồm các chiêu thức khắc địch và bảo vệ thân thể
-INFO:root:  có những khóa học nào ?
-INFO:root:25.000.000 VNĐ
-INFO:root:  có bao nhiêu khóa học  
-INFO:root:25.000.000 VNĐ
-INFO:root:25.000.000 VNĐ
-INFO:root:  có những khóa học nào 
-INFO:root:25.000.000 VNĐ
-INFO:root:  có bao nhiêu khóa học 
-INFO:root:25.000.000 VNĐ
-INFO:root:25.000.000 VNĐ
-INFO:root:  Tôi muốn mua khóa học thì cần phải làm gì
-INFO:root:Bạn xem chi tiết các hướng dẫn bên https://www.google.com.vn/
-INFO:root:  có bao nhiêu môn học 
-INFO:root:25.000.000 VNĐ
-INFO:root:  Tôi có thể đăng kí hay mua những khóa học, môn học nào
-INFO:root:Dưới đây là danh sách các khóa học bạn yêu cầu: Cửu Âm Chân Kinh, Càn Khôn Đại Na Di, Tiên Thiên công, Cáp Mô Công, Hàng long thập bát chưởng, Độc Cô Cửu Kiếm
-INFO:root:  Có những môn học nào
-INFO:root:Dưới đây là danh sách những khóa học: Cửu Âm Chân Kinh, Càn Khôn Đại Na Di, Tiên Thiên công, Cáp Mô Công, Hàng long thập bát chưởng, Độc Cô Cửu Kiếm
-INFO:root:  Có bao nhiêu môn học
-INFO:root:Dưới đây là danh sách các khóa học bạn yêu cầu: Cửu Âm Chân Kinh, Càn Khôn Đại Na Di, Tiên Thiên công, Cáp Mô Công, Hàng long thập bát chưởng, Độc Cô Cửu Kiếm
-INFO:root:  Có những khóa học nào
-INFO:root:Ðây là các khóa học đang mở : Cửu Âm Chân Kinh, Càn Khôn Đại Na Di, Tiên Thiên công, Cáp Mô Công, Hàng long thập bát chưởng, Độc Cô Cửu Kiếm
-INFO:root:  Có những môn học nào
-INFO:root:Dưới đây là danh sách những khóa học: Cửu Âm Chân Kinh, Càn Khôn Đại Na Di, Tiên Thiên công, Cáp Mô Công, Hàng long thập bát chưởng, Độc Cô Cửu Kiếm
-INFO:root:  có những khóa học nào ?
-INFO:root:25.000.000 VNĐ
+INFO:root:  Âu Dương Phong là ai 
+INFO:root:Âu Dương Phong là chủ nhân núi Bạch Đà ở Tây Vực, là một kẻ độc ác, nhiều mưu mô thủ đoạn. Y võ công rất cao, thường dùng một cây gậy có thả hai con rắn độc ở đầu làm vũ khí. Tuyệt kỹ của y là Cáp Mô Công
+INFO:root:  giảng viên là ai ?
+INFO:root:Tiêu Phong là một trong những đại anh hùng xuất chúng nhất trong tiểu thuyết Kim Dung.
+INFO:root:  giảng viên dạy môn trên là ai ?
+INFO:root:Vương Trùng Dương
+INFO:root:  chi tiết Vương Trùng Dương ?
+INFO:root:Độc Cô Cầu Bại

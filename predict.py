@@ -65,6 +65,7 @@ def classify(sentence):
 
 def response(sentence, show_details=False):
     results = classify(sentence)
+    print(results)
     # if not results:
     #     print("Tôi không hiểu ý của bạn")
     # while results:
@@ -79,6 +80,7 @@ def response(sentence, show_details=False):
 
 def response_state(sentence, show_details=False):
     results = classify(sentence)
+    print(results)
     return results
 
 name = ""
@@ -115,21 +117,21 @@ def program():
         res = response(question)
         res_stage = response_state(question_stage)
         if res[0][1] < res_stage[0][1]:
-            while res_stage:
-                for i in intents['intents']:
-                    if i['tag'] == res_stage[0][0]:
-                        responses = random.choice(i['responses'])
-                        logging.info(responses)
-                        print(responses)
-                res_stage.pop(0)
+            # while res_stage:
+            for i in intents['intents']:
+                if i['tag'] == res_stage[0][0]:
+                    responses = random.choice(i['responses'])
+                    logging.info(responses)
+                    print(responses)
+            res_stage.pop(0)
         else:
-            while res:
-                for i in intents['intents']:
-                    if i['tag'] == res[0][0]:
-                        responses = random.choice(i['responses'])
-                        logging.info(responses)
-                        print(responses)
-                res.pop(0)
+            # while res:
+            for i in intents['intents']:
+                if i['tag'] == res[0][0]:
+                    responses = random.choice(i['responses'])
+                    logging.info(responses)
+                    print(responses)
+            res.pop(0)
         # response(question)
 
 
