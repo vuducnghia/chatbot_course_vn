@@ -98,7 +98,7 @@ def program():
     #              "các khóa học của MYCOURSE\n Bạn tên là gì vậy ?\n")
     # age = input('Bạn bao nhiêu tuổi ?')
     while True:
-        question = input('> ')
+        question = input('>')
         question = "  " + question
         question_stage = ""
         logging.info(question)
@@ -114,19 +114,28 @@ def program():
         for i in arrCourse:
             if question.lower().find(i.lower()) > 0:
                 courseCurent = i
-                question_stage = question + courseCurent
+                question_stage = question
                 check = True
-        if check == False:
-            for j in range(len(question)):
-                if ord(question[j]) >= 65 & ord(question[j]) <= 90:
-                    question_stage = question
-                    break
+                break
 
+        checkStage = False
+        if check == False:
+            for j in question:
+                if ord(j) >= 65 and ord(j) <= 90:
+                    print(ord(j))
+                    question_stage = question
+                    checkStage = False
+                    break
+                else:
+                    checkStage = True
+        if checkStage == True:
+            question_stage = question + courseCurent
         # lưu trạng thái nhiều trường hợp data bị lệch dẫn đến kết quả sai => so sánh point giữa có state vs k state
 
         res = response(question)
         res_stage = response_state(question_stage)
         if res[0][1] < res_stage[0][1]:
+            print(question)
             for i in intents['intents']:
                 if i['tag'] == res_stage[0][0]:
                     responses = random.choice(i['responses'])
@@ -134,6 +143,7 @@ def program():
                     print(responses)
             res_stage.pop(0)
         else:
+            print(question_stage)
             for i in intents['intents']:
                 if i['tag'] == res[0][0]:
                     responses = random.choice(i['responses'])
