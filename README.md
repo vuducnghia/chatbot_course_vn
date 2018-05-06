@@ -4,4 +4,5 @@
 ## train data
     python3 training.py
 ##run && test
-python3 predict.py
+
+    python3 predict.py
