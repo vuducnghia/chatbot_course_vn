@@ -7,6 +7,8 @@ from pyvi import ViTokenizer, ViPosTagger
 import numpy as np
 import random
 import logging
+import pymongo
+from pymongo import MongoClient
 
 data = pickle.load(open("models/training_data", "rb"))
 words = data['words']
@@ -30,7 +32,6 @@ model.load('./models/model.tflearn')
 
 def clean_up_sentence(sentence):
     sentence_words = ViPosTagger.postagging(ViTokenizer.tokenize(sentence))[0]
-    # print(sentence_words)
     return sentence_words
 
 
@@ -65,91 +66,108 @@ def classify(sentence):
 
 def response(sentence, show_details=False):
     results = classify(sentence)
-    print(results)
-    # if not results:
-    #     print("Tôi không hiểu ý của bạn")
-    # while results:
-    #     for i in intents['intents']:
-    #         if i['tag'] == results[0][0]:
-    #             res = random.choice(i['responses'])
-    #             logging.info(res)
-    #             return print(res)
-    #     results.pop(0)
+
     return results
 
 
-def response_state(sentence, show_details=False):
-    results = classify(sentence)
-    print(results)
-    return results
+khoavien = []
+mahocphan = []
+tenhocphan = []
+malop = []
 
 
-name = ""
-age = ""
-address = ""
-arrCourse = [" Cửu Âm Chân Kinh", " Càn Khôn Đại Na Di", " Tiên Thiên công", " Cáp Mô Công",
-             " Hàng long thập bát chưởng", " Độc Cô Cửu Kiếm"]
+def readData():
+    with open('data/data.json') as json_data:
+        mang = json.load(json_data)
+
+    for i in mang['features']:
+        global khoavien
+        global malop
+        global tenhocphan
+        global mahocphan
+        khoavien.append(i['Khoa viện'])
+        mahocphan.append(i['Mã HP'])
+        tenhocphan.append(i['Tên HP'])
+        malop.append(i['Mã lớp'])
+
+    khoavien = set(khoavien)
+    mahocphan = set(mahocphan)
+    tenhocphan = set(tenhocphan)
+    malop = set(malop)
 
 
-def program():
-    courseCurent = ""
+def findKeyword(string, collection):
+    for ml in malop:
+        if string.find(str(ml)) >= 0:
+            return collection.find({"Mã lớp": ml}).limit(1)
+    for thp in tenhocphan:
+        if string.find(thp) >= 0:
+            return collection.find({"Tên HP": thp}).limit(1)
+    for kv in khoavien:
+        if string.find(kv) >= 0:
+            return collection.find({"Khoa viện": kv}).limit(1)
+    for mhp in mahocphan:
+        if string.find(mhp) >= 0:
+            return collection.find({"Mã HP": mhp}).limit(1)
+    return False
+
+
+# số lượng sinh viên trong lớp 671888
+def exportRes(data, res):
     logging.basicConfig(filename='example.log', level=logging.INFO)
-    # name = input("Xin Chào! Tôi là trợ lý ảo BOTTOB.Hãy để tôi hỗ trợ các bạn các câu hỏi liên quan đến "
-    #              "các khóa học của MYCOURSE\n Bạn tên là gì vậy ?\n")
-    # age = input('Bạn bao nhiêu tuổi ?')
-    while True:
-        question = input('>')
-        question = "  " + question
-        question_stage = ""
-        logging.info(question)
-        if question == "  ":
-            print("Bạn chưa điền thông tin ?")
-            continue
-        if question == "bye":
-            response('tạm biệt')
 
-            break
+    for i in intents['intents']:
+        if i['tag'] == res[0][0]:
+            responses = random.choice(i['responses'])
+            logging.critical(responses)
+            print(responses)
 
-        check = False
-        for i in arrCourse:
-            if question.lower().find(i.lower()) > 0:
-                courseCurent = i
-                question_stage = question
-                check = True
-                break
-
-        checkStage = False
-        if check == False:
-            for j in question:
-                if ord(j) >= 65 and ord(j) <= 90:
-                    print(ord(j))
-                    question_stage = question
-                    checkStage = False
-                    break
-                else:
-                    checkStage = True
-        if checkStage == True:
-            question_stage = question + courseCurent
-        # lưu trạng thái nhiều trường hợp data bị lệch dẫn đến kết quả sai => so sánh point giữa có state vs k state
-
-        res = response(question)
-        res_stage = response_state(question_stage)
-        if res[0][1] < res_stage[0][1]:
-            print(question)
-            for i in intents['intents']:
-                if i['tag'] == res_stage[0][0]:
-                    responses = random.choice(i['responses'])
-                    logging.critical(responses)
-                    print(responses)
-            res_stage.pop(0)
-        else:
-            print(question_stage)
-            for i in intents['intents']:
-                if i['tag'] == res[0][0]:
-                    responses = random.choice(i['responses'])
-                    logging.critical(responses)
-                    print(responses)
-            res.pop(0)
+    if res[0][0] == 'khoa viện':
+        print(data['Khoa viện'])
+    elif res[0][0] == 'lịch học':
+        print(data['Thời gian'] + data['Thứ'] + data['Tuần'])
+    elif res[0][0] == 'bắt đầu học':
+        print(data['Bắt đầu'])
+    elif res[0][0] == 'kết thúc học':
+        print(data['địa điểm'])
+    elif res[0][0] == 'Phòng':
+        print(data['địa điểm'])
+    elif res[0][0] == 'số lượng sinh viên':
+        print(data['SL Max'])
+    elif res[0][0] == 'hỏi tên học phần':
+        print(data['Tên HP'])
+    elif res[0][0] == 'hỏi mã học phần':
+        print(data['Mã HP'])
+    elif res[0][0] == 'hỏi mã lớp':
+        print(data['Mã lớp'])
 
 
-program()
+
+
+
+
+
+def main():
+    readData()
+    try:
+        client = MongoClient('localhost', 27017)
+
+        # Get the sampleDB database
+        mydb = client['chatbot']
+        collection = mydb.get_collection('course')
+        while True:
+            question = input('>')
+            logging.info(question)
+            kq = findKeyword(question, collection)
+            if kq:
+                for i in kq:
+                    exportRes(i, response(question))
+
+        client.close()
+    except IOError:
+
+        print("Error: cannot connect to rest-mongo-practice")
+
+
+if __name__ == "__main__":
+    main()
