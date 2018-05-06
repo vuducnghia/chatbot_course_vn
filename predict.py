@@ -172,13 +172,16 @@ def main():
                     if i['tag'] == res[0][0]:
                         responses = random.choice(i['responses'])
                         logging.critical(responses)
-                        print(responses)
+                        print(responses,end=' ')
             else:
                 print('Tôi không hiểu bạn hỏi gì')
                 continue
 
             if res[0][0] == 'liệt kê khoa viện':
                 print(21)
+                for i in khoavien:
+                    print(i,end=',')
+                print()
             else:
                 kq = findKeyword(question + stage, collection)
                 if kq:

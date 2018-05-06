@@ -2,3 +2,4 @@ venv/**
 .idea/*
 tflearn_logs/*
 models/*
+.example.log
