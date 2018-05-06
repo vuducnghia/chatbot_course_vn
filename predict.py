@@ -51,7 +51,7 @@ def bow(sentence, words, show_details=False):
 
 
 # data structure to hold user context
-ERROR_THRESHOLD = 0.2
+ERROR_THRESHOLD = 0.4
 
 
 def classify(sentence):
@@ -61,12 +61,12 @@ def classify(sentence):
     return_list = []
     for r in results:
         return_list.append((classes[r[0]], r[1]))
+    print(return_list)
     return return_list
 
 
 def response(sentence, show_details=False):
     results = classify(sentence)
-
     return results
 
 
@@ -74,6 +74,7 @@ khoavien = []
 mahocphan = []
 tenhocphan = []
 malop = []
+stage = ""
 
 
 def readData():
@@ -97,76 +98,97 @@ def readData():
 
 
 def findKeyword(string, collection):
+    global stage
     for ml in malop:
         if string.find(str(ml)) >= 0:
+            stage = str(ml)
             return collection.find({"Mã lớp": ml}).limit(1)
     for thp in tenhocphan:
         if string.find(thp) >= 0:
+            stage = thp
             return collection.find({"Tên HP": thp}).limit(1)
     for kv in khoavien:
         if string.find(kv) >= 0:
-            return collection.find({"Khoa viện": kv}).limit(1)
+            stage = kv
+            return collection.find({"Khoa viện": kv})
     for mhp in mahocphan:
         if string.find(mhp) >= 0:
+            stage = mhp
             return collection.find({"Mã HP": mhp}).limit(1)
     return False
 
 
+logging.basicConfig(filename='example.log', level=logging.INFO)
+
+
 # số lượng sinh viên trong lớp 671888
 def exportRes(data, res):
-    logging.basicConfig(filename='example.log', level=logging.INFO)
-
-    for i in intents['intents']:
-        if i['tag'] == res[0][0]:
-            responses = random.choice(i['responses'])
-            logging.critical(responses)
-            print(responses)
-
     if res[0][0] == 'khoa viện':
         print(data['Khoa viện'])
+        logging.critical(data['Khoa viện'])
     elif res[0][0] == 'lịch học':
         print(data['Thời gian'] + data['Thứ'] + data['Tuần'])
+        logging.critical('Thời gian : ' + data['Thời gian'] + ',Thứ' + data['Thứ'] + ',Tuần' + data['Tuần'])
     elif res[0][0] == 'bắt đầu học':
         print(data['Bắt đầu'])
+        logging.critical(data['Bắt đầu'])
     elif res[0][0] == 'kết thúc học':
-        print(data['địa điểm'])
+        print(data['Kết thúc'])
+        logging.critical(data['Kết thúc'])
     elif res[0][0] == 'Phòng':
         print(data['địa điểm'])
+        logging.critical(data['địa điểm'])
     elif res[0][0] == 'số lượng sinh viên':
         print(data['SL Max'])
+        logging.critical(data['SL Max'])
     elif res[0][0] == 'hỏi tên học phần':
         print(data['Tên HP'])
+        logging.critical(data['Tên HP'])
     elif res[0][0] == 'hỏi mã học phần':
         print(data['Mã HP'])
+        logging.critical(data['Mã HP'])
     elif res[0][0] == 'hỏi mã lớp':
         print(data['Mã lớp'])
-
-
-
-
-
+        logging.critical(data['Mã lớp'])
 
 
 def main():
+    global stage
     readData()
     try:
         client = MongoClient('localhost', 27017)
 
-        # Get the sampleDB database
+        # Get the database
         mydb = client['chatbot']
         collection = mydb.get_collection('course')
         while True:
             question = input('>')
             logging.info(question)
-            kq = findKeyword(question, collection)
-            if kq:
-                for i in kq:
-                    exportRes(i, response(question))
+
+            res = response(question)
+
+            if res:
+                for i in intents['intents']:
+                    if i['tag'] == res[0][0]:
+                        responses = random.choice(i['responses'])
+                        logging.critical(responses)
+                        print(responses)
+            else:
+                print('Tôi không hiểu bạn hỏi gì')
+                continue
+
+            if res[0][0] == 'liệt kê khoa viện':
+                print(21)
+            else:
+                kq = findKeyword(question + stage, collection)
+                if kq:
+                    for i in kq:
+                        exportRes(i, res)
 
         client.close()
-    except IOError:
 
-        print("Error: cannot connect to rest-mongo-practice")
+    except IOError:
+        print("Error: cannot connect to mongodb")
 
 
 if __name__ == "__main__":

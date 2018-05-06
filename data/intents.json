@@ -12,11 +12,13 @@
       ]
     },
     {
-      "tag": "khoa viện",
+      "tag": "liệt kê khoa viện",
       "patterns": [
         "có những khoa viện nào",
         "có bao nhiêu khoa viện ",
-        "nhà trường có bao nhiêu khao viện"
+        "nhà trường có bao nhiêu khoa viện",
+        "có bao nhiêu viện",
+        "số lượng khoa, viện"
       ],
       "responses": [
         "những khoa viện là : "
@@ -41,7 +43,8 @@
       "tag": "bắt đầu học",
       "patterns": [
         "bắt đầu học vào mấy giờ",
-        "thời gian bắt đầu học"
+        "thời gian bắt đầu học",
+        "khi nào bắt đầu"
       ],
       "responses": [
         "bắt đầu lúc : "
@@ -51,10 +54,11 @@
       "tag": "kết thúc học",
       "patterns": [
         "kết thúc học vào mấy giờ",
-        "thời gian kết thúc học"
+        "thời gian kết thúc học",
+        "khi nào kết thúc"
       ],
       "responses": [
-        "bắt đầu lúc : "
+        "kết thúc lúc : "
       ]
     },
     {
@@ -62,7 +66,8 @@
       "patterns": [
         "học ở phòng nào",
         "học ở đâu",
-        "địa điểm học ở chỗ nào"
+        "địa điểm học ở chỗ nào ",
+        "địa điểm học của lớp "
       ],
       "responses": [
         "phòng : "

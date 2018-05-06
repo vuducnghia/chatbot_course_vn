@@ -3,6 +3,7 @@
 
 ## train data
     python3 training.py
-##run && test
+
+## run && test
 
     python3 predict.py
