@@ -1,107 +1,61 @@
-CRITICAL:root:số lượng tối đa : 
-INFO:root:số lượng sinh viên trong lớp 671888
-CRITICAL:root:số lượng tối đa : 
-INFO:root:số lượng tối đa của lớp 671888 là bao nhiêu
-CRITICAL:root:số lượng tối đa : 
-CRITICAL:root:18.0
-INFO:root:địa điểm học 671888
-CRITICAL:root:lịch học : 
-CRITICAL:root:1300-1730223,24,25
-INFO:root:địa điểm học của lớp  671888
-CRITICAL:root:lịch học : 
-CRITICAL:root:1300-1730223,24,25
-INFO:root:địa điểm học của lớp  671888
-CRITICAL:root:lịch học : 
-CRITICAL:root:1300-1730223,24,25
-INFO:root:địa điểm học ở chỗ nào
-INFO:root:địa điểm học ở chỗ nào 671888
-CRITICAL:root:phòng : 
-INFO:root:địa điểm học ở chỗ nào 671888
-CRITICAL:root:phòng : 
-INFO:root:địa điểm học của lớp  671888
-CRITICAL:root:phòng : 
-INFO:root:lịch học
-INFO:root:thời gian kết thúc học môn Thí nghiệm hóa sinh thực phẩm
-CRITICAL:root:bắt đầu lúc : 
-INFO:root:thời gian kết thúc học môn Thí nghiệm hóa sinh thực phẩm
-CRITICAL:root:bắt đầu lúc : 
-INFO:root:thời gian kết thúc học môn Thí nghiệm hóa sinh thực phẩm
-CRITICAL:root:bắt đầu lúc : 
-CRITICAL:root:1730
-INFO:root:thời gian kết thúc học môn Thí nghiệm hóa sinh thực phẩm
-CRITICAL:root:bắt đầu lúc : 
-CRITICAL:root:1730
-INFO:root:có bao nhiêu khoa viện 
-INFO:root:số lượng tối đa của lớp 671888 là bao nhiêu
-CRITICAL:root:số lượng tối đa : 
-CRITICAL:root:18.0
-INFO:root:có bao nhiêu viện
-INFO:root:số lượng tối đa của lớp 671888 là bao nhiêu
-CRITICAL:root:số lượng tối đa : 
-CRITICAL:root:18.0
-INFO:root:có những khoa viện nào
-INFO:root:có những khoa viện nào
+INFO:root:liệt kê các khoa viện 
 CRITICAL:root:những khoa viện là : 
-INFO:root:số lượng tối đa của lớp 671888 là bao nhiêu
-CRITICAL:root:số lượng tối đa : 
-CRITICAL:root:18.0
-INFO:root:có mã học phần
-CRITICAL:root:mã học phần : 
-CRITICAL:root:BF2011
-INFO:root:mã học phần của 671888
-CRITICAL:root:mã học phần : 
-CRITICAL:root:BF2011
-INFO:root:tên môn học 
+INFO:root:tên học phần của 100974
 CRITICAL:root:tên học phần : 
-CRITICAL:root:Thí nghiệm hóa sinh thực phẩm
-INFO:root:số lượng tối đa của lớp 100974 là bao nhiêu
+CRITICAL:root:Tiếng Nhật 6
+INFO:root:lịch học thế nào ?
+CRITICAL:root:lịch học : 
+CRITICAL:root:Thời gian : 0830-1150,Thứ2,Tuần22-25,28-31,33-40
+INFO:root:số lượng sinh viên lớp 100998 là bao nhiêu
 CRITICAL:root:số lượng tối đa : 
 CRITICAL:root:22.0
-INFO:root:khi nào thì học 
-CRITICAL:root:lịch học : 
-CRITICAL:root:0830-1150222-25,28-31,33-40
-INFO:root:khi nào thì bắt đầu 
-CRITICAL:root:mã lớp : 
-CRITICAL:root:100974.0
-INFO:root:bắt đầu học vào mấy giờ
-CRITICAL:root:bắt đầu lúc : 
-CRITICAL:root:3
-INFO:root:học vào thứ mầy 
-CRITICAL:root:lịch học : 
-CRITICAL:root:0830-1150222-25,28-31,33-40
-INFO:root:số lượng tối đa của lớp 671888 là bao nhiêu
-CRITICAL:root:số lượng tối đa : 
-CRITICAL:root:18.0
-INFO:root:vu ducn gh
+INFO:root:tạm biệt 
 CRITICAL:root:tạm biệt
-INFO:root:số lượng tối đa của lớp 671888 là bao nhiêu
-CRITICAL:root:số lượng tối đa : 
-CRITICAL:root:18.0
-INFO:root:123
-CRITICAL:root:tạm biệt
-INFO:root:vu duc nghia 
-INFO:root:vu duc nghia 
-INFO:root:vuducnghia
-INFO:root:vudcnghia
-INFO:root:vuducnghia
-INFO:root:vuducnghia
-INFO:root:vuducnghia
-INFO:root:vuducnghia
-INFO:root:vuducnghia
-INFO:root:vuducnghia
-INFO:root:vuducnghia
-INFO:root:số lượng tối đa của lớp 671888 là bao nhiêu
-CRITICAL:root:số lượng tối đa : 
-CRITICAL:root:18.0
-INFO:root:vu duc nghia
-INFO:root:có những khoa viện nào
+INFO:root:liệt kê các khoa viện
 CRITICAL:root:những khoa viện là : 
-INFO:root:có những khoa viện nào
-CRITICAL:root:những khoa viện là : 
-INFO:root:có những khoa viện nào
-CRITICAL:root:những khoa viện là : 
-INFO:root:
-INFO:root:có những khoa viện nào
-CRITICAL:root:những khoa viện là : 
-INFO:root:có những khoa viện nào
-CRITICAL:root:những khoa viện là : 
+INFO:root:tên học phần của 100975
+CRITICAL:root:tên học phần : 
+CRITICAL:root:Tiếng Nhật 6
+INFO:root:lịch học 
+CRITICAL:root:lịch học : 
+CRITICAL:root:Thời gian : 0830-1150,Thứ2,Tuần22-25,28-31,33-40
+INFO:root:mã học phần của Xử lý ngôn ngữ tự nhiên 
+CRITICAL:root:mã học phần : 
+CRITICAL:root:JP2131
+INFO:root:mã học phần Xử lý ngôn ngữ tự nhiên
+CRITICAL:root:mã học phần : 
+CRITICAL:root:JP2131
+INFO:root:tên học phần Xử lý ngôn ngữ tự nhiên
+CRITICAL:root:tên học phần : 
+CRITICAL:root:Tiếng Nhật 6
+INFO:root:tên học phần của Xử lý ngôn ngữ tự nhiên
+CRITICAL:root:tên học phần : 
+CRITICAL:root:Tiếng Nhật 6
+INFO:root:tên học phần của Xử lý ngôn ngữ tự nhiên
+CRITICAL:root:tên học phần : 
+CRITICAL:root:Xử lý ngôn ngữ tự nhiên
+INFO:root:mã học phần 
+CRITICAL:root:mã học phần : 
+CRITICAL:root:IT4772
+INFO:root:vu duc gnh
+INFO:root:lịch học 
+CRITICAL:root:lịch học : 
+CRITICAL:root:Thời gian : 1230-1550,Thứ2,Tuần22-25,28-31,33-40
+INFO:root:Xử lý ngôn ngữ tự nhiên có tên học phần là gì 
+CRITICAL:root:tên học phần : 
+CRITICAL:root:Xử lý ngôn ngữ tự nhiên
+INFO:root:mã học phần 
+CRITICAL:root:mã học phần : 
+CRITICAL:root:IT4772
+INFO:root:Xử lý ngôn ngữ tự nhiên có mã học phần là gì 
+CRITICAL:root:mã học phần : 
+CRITICAL:root:IT4772
+INFO:root:Ngôn ngữ lập trình học lúc nào 
+CRITICAL:root:lịch học : 
+CRITICAL:root:Thời gian : 1230-1550,Thứ2,Tuần22-25,28-31,33-40
+INFO:root:Xử lý ngôn ngữ tự nhiên học ở đâu 
+CRITICAL:root:phòng : 
+INFO:root:Xử lý ngôn ngữ tự nhiên học ở đâu 
+CRITICAL:root:phòng : 
+INFO:root:Xử lý ngôn ngữ tự nhiên học ở đâu 
+CRITICAL:root:phòng : 

@@ -61,7 +61,7 @@ def classify(sentence):
     return_list = []
     for r in results:
         return_list.append((classes[r[0]], r[1]))
-    print(return_list)
+    # print(return_list)
     return return_list
 
 
@@ -127,7 +127,7 @@ def exportRes(data, res):
         print(data['Khoa viện'])
         logging.critical(data['Khoa viện'])
     elif res[0][0] == 'lịch học':
-        print(data['Thời gian'] + data['Thứ'] + data['Tuần'])
+        print('Thời gian : ' + data['Thời gian'] + ',Thứ' + data['Thứ'] + ',Tuần' + data['Tuần'])
         logging.critical('Thời gian : ' + data['Thời gian'] + ',Thứ' + data['Thứ'] + ',Tuần' + data['Tuần'])
     elif res[0][0] == 'bắt đầu học':
         print(data['Bắt đầu'])
@@ -136,7 +136,8 @@ def exportRes(data, res):
         print(data['Kết thúc'])
         logging.critical(data['Kết thúc'])
     elif res[0][0] == 'Phòng':
-        print(data['địa điểm'])
+        print(data)
+        print(data['Phòng'])
         logging.critical(data['địa điểm'])
     elif res[0][0] == 'số lượng sinh viên':
         print(data['SL Max'])
@@ -161,6 +162,7 @@ def main():
         # Get the database
         mydb = client['chatbot']
         collection = mydb.get_collection('course')
+        print('Chào Bạn!')
         while True:
             question = input('>')
             logging.info(question)
@@ -182,6 +184,9 @@ def main():
                 for i in khoavien:
                     print(i,end=',')
                 print()
+            elif res[0][0] =='tạm biệt':
+                break
+
             else:
                 kq = findKeyword(question + stage, collection)
                 if kq:
